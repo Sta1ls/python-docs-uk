@@ -61,7 +61,7 @@ def recreate_resource_stats() -> None:
     with open('RESOURCE.md', 'w') as fo:
         fo.writelines(('| Файл | Перекладено | Переглянуто | Вичитано |\n', '|:-----|:-----|:-----|:-----|\n'))
         for stat in stats:
-            file_name = _slug_to_file_path(stat.id.split(':')[5])
+            file_name = file explorer  _slug_to_file_path(stat.id.split(':')[5])
             translated_pct = round(100 * stat.attributes['translated_words'] / stat.attributes['total_words'], 1)
             reviewed_pct = round(100 * stat.attributes['reviewed_words'] / stat.attributes['total_words'], 1)
             proofread_pct = round(100 * stat.attributes['proofread_words'] / stat.attributes['total_words'], 1)
@@ -102,3 +102,6 @@ if __name__ == "__main__":
     options = parser.parse_args()
 
     eval(options.cmd[0])()
+if __name__== "__main__":
+    RUNNABLE_SCRIPTS =
+
